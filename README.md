@@ -1,16 +1,69 @@
-# stroop_effect_app
+# Stroop Effect Reaction Time App
+This Flutter application measures reaction time using the Stroop effect and displays high scores. Users can configure the game settings, start the game, and view their high scores in a visually appealing manner.
 
-A new Flutter project.
+## Features
+Measure reaction time with the Stroop effect
+User-configurable settings (time per word, game mode, maximum attempts)
+Display high scores in a grid format
+Save and load high scores using SharedPreferences
 
-## Getting Started
+## Installation
+1. Clone the repository
+git clone https://github.com/yourusername/stroop-effect-app.git
+cd stroop-effect-app
 
-This project is a starting point for a Flutter application.
+2. Install dependencies
+flutter pub get
 
-A few resources to get you started if this is your first Flutter project:
+3. Run the app
+flutter run
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Usage
+1. Home Screen
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Start the game by clicking on "Start Game".
+View high scores by clicking on "View High Scores".
+Configure game settings by clicking on "Settings".
+Game Screen
+
+2. Enter your username.
+Follow the instructions to select the correct color as fast as possible.
+The game ends when you run out of time or attempts.
+
+3.High Scores Screen
+
+View a grid of high scores with user names and their performance.
+
+## Configuration
+Time Per Word: Set the time each word is displayed.
+Game Mode: Choose between time-based or attempt-based mode.
+Maximum Attempts: Set the maximum number of attempts for the game.
+
+## File Structure
+stroop-effect-app/
+
+├── lib/
+│   ├── main.dart
+│   ├── screens/
+│   │   ├── home_screen.dart
+│   │   ├── game_screen.dart
+│   │   ├── high_scores_screen.dart
+│   │   ├── settings_screen.dart
+│   ├── models/
+│   │   └── score.dart
+│   ├── widgets/
+│   │   └── custom_elevated_button.dart
+├── assets/
+│   ├── images/
+│   │   ├── logo.png
+│   │   ├── scores.png
+│   │   └── game.png
+├── pubspec.yaml
+└── README.md
+
+## Contributing
+Fork the repository.
+Create your feature branch: git checkout -b feature/YourFeature.
+Commit your changes: git commit -m 'Add some feature'.
+Push to the branch: git push origin feature/YourFeature.
+Open a pull request.
