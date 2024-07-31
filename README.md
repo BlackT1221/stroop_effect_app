@@ -43,22 +43,39 @@ Maximum Attempts: Set the maximum number of attempts for the game.
 stroop-effect-app/
 
 ├── lib/
+
 │   ├── main.dart
+
 │   ├── screens/
+
 │   │   ├── home_screen.dart
+
 │   │   ├── game_screen.dart
+
 │   │   ├── high_scores_screen.dart
+
 │   │   ├── settings_screen.dart
+
 │   ├── models/
+
 │   │   └── score.dart
+
 │   ├── widgets/
+
 │   │   └── custom_elevated_button.dart
+
 ├── assets/
+
 │   ├── images/
+
 │   │   ├── logo.png
+
 │   │   ├── scores.png
+
 │   │   └── game.png
+
 ├── pubspec.yaml
+
 └── README.md
 
 ## Contributing
