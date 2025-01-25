@@ -31,10 +31,10 @@ class HighScoresScreen extends StatelessWidget {
               itemBuilder: (context, index) {
                 final score = snapshot.data![index]; // Get the score at the current index
                 return ListTile(
-                  title: Text('User: ${score.userName}'), // Display user name
+                  title: Text('Usuario: ${score.userName}'), // Display user name
                   subtitle: Text(
-                    'Words Shown: ${score.wordsShown}\n'
-                    'Words Correct: ${score.wordsCorrect}', // Display words shown and correct
+                    'Palabras mostradas: ${score.wordsShown}\n'
+                    'Palabras correctas: ${score.wordsCorrect}', // Display words shown and correct
                   ),
                 );
               },

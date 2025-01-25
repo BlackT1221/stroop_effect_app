@@ -21,7 +21,7 @@ class HomeScreen extends StatelessWidget {
                   children: [
                     // Button to start the game
                     CustomElevatedButton(
-                      text: 'Start Game',
+                      text: 'Jugar',
                       onPressed: () {
                         Navigator.push(
                           context,
@@ -38,7 +38,7 @@ class HomeScreen extends StatelessWidget {
                   children: [
                     // Button to view high scores
                     CustomElevatedButton(
-                      text: 'View High Scores',
+                      text: 'Ver puntuaciones',
                       onPressed: () {
                         Navigator.push(
                           context,
@@ -56,7 +56,7 @@ class HomeScreen extends StatelessWidget {
                   children: [
                     // Button to open settings
                     CustomElevatedButton(
-                      text: 'Settings',
+                      text: 'Configuraciones',
                       onPressed: () {
                         Navigator.push(
                           context,

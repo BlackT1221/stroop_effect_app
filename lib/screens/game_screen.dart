@@ -12,7 +12,7 @@ class GameScreen extends StatefulWidget {
 }
 
 class _GameScreenState extends State<GameScreen> {
-  final List<String> colors = ['Yellow', 'Blue', 'Red', 'Green']; // List of colors for the game
+  final List<String> colors = ['Amarillo', 'Azul', 'Rojo', 'Verde']; // List of colors for the game
   String displayedWord = ''; // Word currently displayed
   String correctColor = ''; // Color that the displayed word should match
   int score = 0; // Player's score
@@ -54,12 +54,12 @@ class _GameScreenState extends State<GameScreen> {
     showDialog<String>(
       context: context,
       builder: (BuildContext context) => AlertDialog(
-        title: const Text('Enter your username'),
+        title: const Text('Ingresa tu nombre'),
         content: TextField(
           onChanged: (value) {
             _userName = value;
           },
-          decoration: const InputDecoration(hintText: 'Username'),
+          decoration: const InputDecoration(hintText: 'Nombre de usuario'),
         ),
         actions: <Widget>[
           TextButton(
@@ -67,7 +67,7 @@ class _GameScreenState extends State<GameScreen> {
               Navigator.of(context).pop();
               _startGame(); // Start the game after username is entered
             },
-            child: const Text('Start'),
+            child: const Text('Jugar'),
           ),
         ],
       ),
@@ -205,13 +205,13 @@ class _GameScreenState extends State<GameScreen> {
   // Get color based on the color name
   Color _getColor(String colorName) {
     switch (colorName) {
-      case 'Yellow':
+      case 'Amarillo':
         return Colors.yellow;
-      case 'Blue':
+      case 'Azul':
         return Colors.blue;
-      case 'Red':
+      case 'Rojo':
         return Colors.red;
-      case 'Green':
+      case 'Verde':
         return Colors.green;
       default:
         print('Unknown color name: $colorName');
@@ -265,7 +265,7 @@ class _GameScreenState extends State<GameScreen> {
           ],
           if (_isTimeBased)
             Text(
-                'Remaining Time: ${(_remainingTime / 1000).toStringAsFixed(1)} s',
+                'Tiempo restante: ${(_remainingTime / 1000).toStringAsFixed(1)} s',
                 style: const TextStyle(fontSize: 24)),
         ],
       ),

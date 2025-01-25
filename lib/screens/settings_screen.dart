@@ -60,7 +60,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 children: <Widget>[
                   // Switch to toggle between time-based and attempt-based game modes
                   SwitchListTile(
-                    title: Text('Play with time only', style: TextStyle(fontWeight: FontWeight.w500)),
+                    title: Text('Jugar solo con tiempo', style: TextStyle(fontWeight: FontWeight.w500)),
                     value: _isTimeBased,
                     onChanged: (bool value) {
                       setState(() {
@@ -71,7 +71,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                   // Show the total game time input if the game is time-based
                   if (_isTimeBased)
                     TextFormField(
-                      decoration: InputDecoration(labelText: 'Total game time (ms)'),
+                      decoration: InputDecoration(labelText: 'Tiempo total del juego (ms)'),
                       initialValue: _totalGameTime.toString(),
                       keyboardType: TextInputType.number,
                       validator: (value) {
